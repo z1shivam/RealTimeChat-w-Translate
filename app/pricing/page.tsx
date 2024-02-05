@@ -1,11 +1,14 @@
-import React from 'react'
+import PricingCards from "@/components/PricingCards";
+import React from "react";
 
 function PricingPage() {
   return (
-    <div>
-    
+    <div className="flex w-full items-center justify-center py-6 px-3">
+      <div>
+        <PricingCards redirect={true} />
+      </div>
     </div>
-  )
+  );
 }
 
-export default PricingPage
+export default PricingPage;
