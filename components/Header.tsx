@@ -1,9 +1,12 @@
-import React from "react";
 import Logo from "./ui/logo";
 import DarkModeToggle from "./ui/DarkModeToggle";
 import UserButton from "./ui/UserButton";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
 
-function Header() {
+async function Header() {
+  const session = await getServerSession(authOptions);
+  console.log(session)
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-900">
       <nav className="mx-auto flex max-w-7xl flex-col items-center bg-white px-5 pl-2 dark:bg-gray-900 sm:flex-row">

@@ -9,6 +9,8 @@ import {
 import UserAvatar from "./UserAvatar";
 
 function UserButton() {
+  // session data...
+  
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
