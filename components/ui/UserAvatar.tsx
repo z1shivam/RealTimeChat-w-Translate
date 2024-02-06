@@ -22,7 +22,6 @@ function UserAvatar({
           className="rounded-full"
         />
       )}
-      {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
       <AvatarFallback
         delayMs={1000}
         className="text-lg dark:bg-white dark:text-black"
