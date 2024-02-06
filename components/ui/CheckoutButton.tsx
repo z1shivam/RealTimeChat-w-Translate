@@ -1,8 +1,15 @@
 'use client'
+
+import { useSession } from "next-auth/react";
+
 function CheckoutButton() {
+  const {data: session} =  useSession();
   const createCheckoutSession = async () => {
+    if(!session) return;
     // push a document in firestore db
     // create a checkout sesssion
+
+    // stripe extension firebase will create a checkout session.
   };
   return (
     <>
